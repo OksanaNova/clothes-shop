@@ -1,11 +1,11 @@
-function Buttons({filteredClothes}) {
+function Buttons({filterClothes}) {
     return (
         <div className="cont">
-            <button className="change" onClick={() => filteredClothes("dress")} >Dresses</button>
-            <button className="change">Pants</button>
-            <button className="change">Skirts</button>
-            <button className="change">Shoes</button>
-            <button className="change">Shirts</button>
+            <button className="change" onClick={() => filterClothes("dress")} >Dresses</button>
+            <button className="change" onClick={() => filterClothes("pants")} >Pants</button>
+            <button className="change" onClick={() => filterClothes("skirt")} >Skirts</button>
+            <button className="change" onClick={() => filterClothes("shoes")} >Shoes</button>
+            <button className="change" onClick={() => filterClothes("shirt")} >Shirts</button>
         </div>
     )
 }
