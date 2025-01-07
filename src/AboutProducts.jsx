@@ -4,11 +4,15 @@ import { data } from "./data";
 function AboutProduct() {
 
     const navigate = useNavigate();
-    const { title } = useParams();
+    const { productName } = useParams();
+    console.log(productName);
+    // const allParams = useParams();
+    // console.log('allParams', allParams);
+    // const title = allParams.title;
 
     return(
         <div>
-            {data.filter((item) => item.title === title).map((element, index) => {
+            {data.filter((item) => item.title === productName).map((element, index) => {
                 return (
                     <div key={index}>
                         <h3>{element.name}</h3>
